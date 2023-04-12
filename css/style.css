@@ -83,11 +83,6 @@
     transition: .5s;
 }
 
-.navbar .navbar-brand,
-.navbar a.btn {
-    height: 80px
-}
-
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
@@ -111,6 +106,10 @@
     margin-left: 8px;
 }
 
+.navbar .navbar-nav .why-choose-us:hover {
+    color: var(--light);
+}
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
@@ -119,6 +118,14 @@
 
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
+    }
+    .navbar .navbar-brand,
+    .navbar a.btn {
+        height: 80px
+    }
+    .navbar .navbar-nav .why-choose-us {
+        height: auto;
+        padding: 60px;
     }
 }
 
@@ -138,6 +145,10 @@
         visibility: visible;
         transition: .5s;
         opacity: 1;
+    }
+    .dropdown-non-mobile {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -185,6 +196,16 @@
 
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-automatic-banner {
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/automatic-car-course-banner.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-contact-banner {
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/contact-banner.jpg) center center no-repeat;
     background-size: cover;
 }
 
