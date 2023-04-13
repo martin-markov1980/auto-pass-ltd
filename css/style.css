@@ -209,6 +209,21 @@
     background-size: cover;
 }
 
+.page-header-intensive-banner {
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/intensive-car-course-banner.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-tailored-banner {
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/custom-banner.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-faq-banner {
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/faq-banner.jpg) center center no-repeat;
+    background-size: cover;
+}
+
 .breadcrumb-item+.breadcrumb-item::before {
     color: #999999;
 }
