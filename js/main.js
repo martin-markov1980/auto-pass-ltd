@@ -56,6 +56,11 @@
 
 })(jQuery);
 
+// let url = window.location.href;
+// url = url.split('.html')[0];
+// //url = url.substring(0, url.lastIndexOf("."));
+// window.history.replaceState( null, null, url );
+
 // const menuItems = document.querySelectorAll('.nav-item');
 // console.log(menuItems);
 // menuItems.forEach(item => {
