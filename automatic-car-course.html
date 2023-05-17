@@ -121,29 +121,32 @@
       <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
         <h1 class="display-6 mb-4">Automatic Car Course, Please Contact Us</h1>
         <p class="mb-4">Lessons taken in 2 hours sessions for best results. 1 hour £35.00, £70 per 2 hours. For package of 10 hours the price is £340. Please bring your Driving Licence on your first lesson. If you have any further queries, please contact us using the form below.</p>
-        <form>
+        <form action="https://formsubmit.co/martin.markov1980@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_next" value="https://martin-markov1980.github.io/auto-pass-ltd/thank-you.html">
+          <input type="hidden" name="Message from 'Automatic Car Course' form">
           <div class="row g-3">
             <div class="col-md-6">
               <div class="form-floating">
-                <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Your Name">
+                <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Your Name" name="Name">
                 <label for="name">Your Name</label>
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-floating">
-                <input type="email" class="form-control border-0 bg-light" id="email" placeholder="Your Email">
+                <input type="email" class="form-control border-0 bg-light" id="email" placeholder="Your Email" name="Email">
                 <label for="email">Your Email</label>
               </div>
             </div>
             <div class="col-12">
               <div class="form-floating">
-                <input type="text" class="form-control border-0 bg-light" id="subject" placeholder="Subject">
+                <input type="text" class="form-control border-0 bg-light" id="subject" placeholder="Subject" name="Subject">
                 <label for="subject">Subject</label>
               </div>
             </div>
             <div class="col-12">
               <div class="form-floating">
-                <textarea class="form-control border-0 bg-light" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                <textarea class="form-control border-0 bg-light" placeholder="Leave a message here" id="message" style="height: 150px" name="Message"></textarea>
                 <label for="message">Message</label>
               </div>
             </div>
@@ -231,6 +234,14 @@
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+
+<!-- Start of Glassix WhatsApp Widget -->
+<script>
+  var stringifiedOptions = `{"numbers":[{"number":"447448247600","name":"Customer Support","subtitle":"Contact us 24/7"}],"left":false,"ltr":true,"popupText":"Need help?\nChat with us on WhatsApp","title":"Hi There 👋","subTitle":"Click to start a conversation"}`;
+  var glassixWidgetOptions = JSON.parse(stringifiedOptions.replace(/\n/g, '\\n'));
+  !function (t) { var e = function () { window.requirejs && !window.whatsAppWidgetClient && (requirejs.config({ paths: { GlassixWhatsAppWidgetClient: "https://cdn.glassix.com/clients/whatsapp.widget.1.2.min.js" } }), require(["GlassixWhatsAppWidgetClient"], function (t) { window.whatsAppWidgetClient = new t(window.glassixWidgetOptions), whatsAppWidgetClient.attach() })), window.GlassixWhatsAppWidgetClient && "function" == typeof window.GlassixWhatsAppWidgetClient ? (window.whatsAppWidgetClient = new GlassixWhatsAppWidgetClient(t), whatsAppWidgetClient.attach()) : i() }, i = function () { a.onload = e, a.src = "https://cdn.glassix.net/clients/whatsapp.widget.1.2.min.js", s && s.parentElement && s.parentElement.removeChild(s), n.parentNode.insertBefore(a, n) }, n = document.getElementsByTagName("script")[0], s = document.createElement("script"); s.async = !0, s.type = "text/javascript", s.crossorigin = "anonymous", s.id = "glassix-whatsapp-widget-script"; var a = s.cloneNode(); s.onload = e, s.src = "https://cdn.glassix.com/clients/whatsapp.widget.1.2.min.js", !document.getElementById(s.id) && document.body && (n.parentNode.insertBefore(s, n), s.onerror = i) }(glassixWidgetOptions);
+</script>
+<!-- End of Glassix WhatsApp Widget -->
 </body>
 
 </html>
