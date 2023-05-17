@@ -24,12 +24,12 @@
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
+            $('.back-to-top').fadeIn('slow').addClass('btn-lg-square').css('display', 'flex');
         } else {
             $('.back-to-top').fadeOut('slow');
         }
