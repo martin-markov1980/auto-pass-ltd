@@ -4,6 +4,52 @@
     --secondary: #757575;
     --light: #F3F6F8;
     --dark: #0C2B4B;
+    /* Custom colors added */
+    --black: black;
+    --dark-light: #3C3D37;
+    --light-grey: #E6E0DA;
+    --gold-light: #E8B73A;
+    --gold-dark: #CC9304;
+}
+
+body {
+    background-color: var(--dark-light);
+    color: var(--light-grey);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    color: var(--light-grey);
+}
+
+.make-appointment-h1 {
+    color: var(--dark-light);
+}
+
+p {
+    color: var(--gold-light);
+}
+
+form label {
+    color: var(--dark-light);
+}
+
+.black-bg {
+    background-color: var(--black);
+}
+
+.bg-primary {
+    background-color: var(--gold-light) !important;
 }
 
 .py-6 {
@@ -24,6 +70,23 @@
     z-index: 99;
 }
 
+.text-light {
+    color: var(--light-grey) !important;
+}
+
+.text-primary,
+.btn-link
+{
+    color: var(--gold-light) !important;
+}
+
+.btn-primary {
+    background-color: var(--gold-light);
+}
+
+.bg-dark {
+    background-color: var(--dark-light) !important;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -86,7 +149,7 @@
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color: var(--dark);
+    color: var(--gold-light);
     font-weight: 500;
     text-transform: uppercase;
     outline: none;
@@ -95,6 +158,10 @@
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--primary);
+}
+
+.navbar .navbar-nav .dropdown-item {
+    color: var(--gold-light) !important;
 }
 
 .navbar .dropdown-toggle::after {
@@ -106,7 +173,12 @@
     margin-left: 8px;
 }
 
+.navbar .navbar-nav .why-choose-us {
+    border: 1px solid var(--gold-light) !important;
+}
+
 .navbar .navbar-nav .why-choose-us:hover {
+    background-color: var(--gold-light);
     color: var(--light);
 }
 
@@ -129,13 +201,15 @@
         padding: 10px 0;
     }
 
-    .navbar .navbar-nav {
-        border-top: 1px solid #EEEEEE;
-    }
     .navbar .navbar-brand,
     .navbar a.btn {
         height: 80px
     }
+
+    #navbar .navbar-toggler {
+        background-color: var(--gold-light);
+    }
+
     .navbar .navbar-nav .why-choose-us {
         height: auto;
         padding: 60px;
@@ -238,7 +312,7 @@
 }
 
 .page-header-about-banner {
-    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/about-banner.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../img/meet-the-team-banner.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -265,7 +339,7 @@
 /*** Courses ***/
 .courses {
     min-height: 100vh;
-    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-color: var(--dark-light);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -294,6 +368,14 @@
 /*** Team ***/
 .team-items {
     margin: -.75rem;
+}
+
+.team-items h5 {
+    color: var(--gold-light);
+}
+
+.team-items span {
+    color: var(--gold-light);
 }
 
 .team-item {
@@ -396,8 +478,17 @@
     box-shadow: none;
 }
 
+.footer .btn-outline-light {
+    color: var(--gold-light);
+    border-color: var(--gold-light);
+}
+
+.footer .socials {
+    color: var(--gold-light);
+}
+
 .copyright {
-    background: #092139;
+    background: var(--dark-light);
 }
 
 .copyright a {
@@ -406,4 +497,8 @@
 
 .copyright a:hover {
     color: var(--light);
+}
+
+.dropdown-toggle {
+    color: var(--gold-light) !important;
 }
