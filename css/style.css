@@ -487,6 +487,16 @@ form label {
     color: var(--gold-light);
 }
 
+.footer .footer-logos {
+    justify-content: center;
+ }
+
+@media (min-width: 768px) {
+    .footer .footer-logos {
+       justify-content: start;
+    }
+}
+
 .copyright {
     background: var(--dark-light);
 }
