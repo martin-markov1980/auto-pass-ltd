@@ -24,5 +24,5 @@ which basically handle all the site form submissions and sends the results to th
 This service is quite good for low traffic sites, as it's provide 100 free form submissions per day.</br>
 With this project I have also gain experience with setting **Domain Name** using Google domain names service and setting Cloudflare CDN for better site performance.
 
-## Libraries, used in the site:
+## Libraries used:
 For the site layout and the css I used **bootstrap 5** - https://getbootstrap.com/docs/5.0/getting-started/introduction/ <br>
